@@ -30,5 +30,5 @@ aws ecr-public get-login-password --region us-east-1 | docker login --username A
     6.3	docker images
     6.4	docker run -d -p 8082:80 sal-nginx-docker (In browser, URL will work - http://localhost:8080)
     6.5	docker push public.ecr.aws/975050024946/sal-nginx-docker:latest	
-7.	Once it is pushed successfully, the image will be pushed to the ECR repository.
+8.	Once it is pushed successfully, the image will be pushed to the ECR repository.
 
