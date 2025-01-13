@@ -3,12 +3,33 @@
 ## Overview
 This project demonstrates the containerization of a simple HTML page using Nginx and Docker.
 
-## Files
+## Requirements:
+
+1. Basic HTML Page:
+   - Create a plain HTML page named `index.html` with some content (e.g., "Hello, Docker!").
+
+2. Nginx Configuration:
+   - Create an Nginx configuration file named `nginx.conf` that serves the `index.html` page.
+   - Configure Nginx to listen on port 80.
+
+3. Dockerfile:
+   - Create a `Dockerfile` to define the Docker image.
+   - Use an official Nginx base image.
+   - Copy the `index.html` and `nginx.conf` files into the appropriate location in the container.
+   - Ensure that the Nginx server is started when the container is run.
+
+4. Building the Docker Image:
+   - Build the Docker image using the `Dockerfile`.
+
+5. Push the image on ECR
+  - Make the public repository and push them on the ECR
+
+## Files used in the Project - 
 1. **index.html**: The static HTML page served by the Nginx server.
 2. **nginx.conf**: Custom Nginx configuration to serve the `index.html`.
 3. **Dockerfile**: Defines the Docker image for the project.
 
-To confiure AWS using CLI,building and pushing the Docker Image, peform below steps - 
+## To confiure AWS using CLI,building and pushing the Docker Image, peform below steps - 
 1. aws configure (provide keys, secret access keys, region and formats)
 2. aws sts get-caller-identity (to verify the user credentials of AWS)
 3.	Create a Public ECR Repository:
