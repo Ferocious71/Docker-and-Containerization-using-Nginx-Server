@@ -24,7 +24,7 @@ This project demonstrates the containerization of a simple HTML page using Nginx
 5. Push the image on ECR
   - Make the public repository and push them on the ECR
 
-## Files used in the Project - 
+## Files used in the Project ,PFA- 
 1. **index.html**: The static HTML page served by the Nginx server.
 2. **nginx.conf**: Custom Nginx configuration to serve the `index.html`.
 3. **Dockerfile**: Defines the Docker image for the project.
@@ -49,7 +49,7 @@ aws ecr-public get-login-password --region us-east-1 | docker login --username A
     6.1	 docker build -t sal-nginx-docker .
     6.2	 docker tag sal-nginx-docker:latest public.ecr.aws/975050024946/sal-nginx-docker:latest 
     6.3	docker images
-    6.4	docker run -d -p 8082:80 sal-nginx-docker (In browser, URL will work - http://localhost:8080)
+    6.4	docker run -d -p 8082:80 sal-nginx-docker (In browser, URL will work - http://localhost:8081) - as 8080 port was used by my local 
     6.5	docker push public.ecr.aws/975050024946/sal-nginx-docker:latest	
 8.	Once it is pushed successfully, the image will be pushed to the ECR repository.
 9.	PFB sceenrshots from the AWS console for the ECR Registry Folder creation and dockerized image pushed to the folder.
