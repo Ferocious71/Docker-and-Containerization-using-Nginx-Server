@@ -45,7 +45,7 @@ aws ecr-public get-login-password --region us-east-1 | docker login --username A
     }
     4.3	Then Retry the AWS ECR login.
 5.	Once login is successful, run - sudo apt update, sudo apt upgrade -y.
-6.	Install Docker as well. And run the below commands to build, tag and push the image.
+## 6.	Install Docker as well. And run the below commands to build, tag and push the image.
     6.1	 docker build -t sal-nginx-docker .
     6.2	 docker tag sal-nginx-docker:latest public.ecr.aws/975050024946/sal-nginx-docker:latest 
     6.3	docker images
